@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <math.h>
+
+
 int nguyenTo(int n){
 
 for (int i=2;i<=n;i++)
@@ -30,24 +32,16 @@ int tongCacChuSo(int n){
 
 int chuViVaDienTich(int a; int b; int c){
 	
-	if(a<b+c){
-		if(b<a+c){
-			if(c<b+a){
-				return true;
-				int chuvi, p, dientich;
+	if(a<b+c && b<a+c && c<a+b){
+		int chuvi, p, dientich;
 				chuvi=a+b+c return chuvi;
 				p=(float)(a+b+c)/2;
 				dientich=sqrt(p*(p-a)*(p-b)*(p-c)) return dientich;
-			}else{
-				return false;
-			}
-		}else{
-			return false;
-		}
 	}else{
 		return false;
 	}
 }
+
 
 
 
