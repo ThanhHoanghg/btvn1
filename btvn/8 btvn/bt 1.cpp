@@ -21,7 +21,7 @@ int main(){
 	printf(" nhap x=");
 	scanf("%d",&x);
 	for(int i=temp;i>0;i--){
-		if(arr[i]<=x){
+		if(arr[i]<x){
 			printf(" so nho hon va gan x nhat la : %d ",arr[i]);
 			break;
 		}
