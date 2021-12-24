@@ -49,7 +49,13 @@ int chuViVaDienTich(int a; int b; int c){
 
 int uocChungLonNhat(int a; intb){
 	
-	for(int i=a;i>=1;i--){
+	
+	if(a==0 && b==0){
+		return NULL;
+	}
+	if(a<0) a=-a;
+	if(b<0) b=-b;
+	for(int i=a;i>0;i--){
 		if(a%i==0 && b%i==0){
 			break;
 		} 
@@ -63,6 +69,11 @@ int uocChungLonNhat(int a; intb){
 
 int boiChungNhoNhat(int a; intb){
 	
+	if(a==0 && b==0){
+		return NULL;
+	}
+	if(a<0) a = -a;
+	if(b<0) b = -b;
 	for(int i=0;i<=a*b;i++){
 		if(i%a==0 && i%b==0){
 			break;
