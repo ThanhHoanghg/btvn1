@@ -8,23 +8,24 @@ int main(){
 		printf("nhap so trong mang =");
 		scanf("%d",arr[i]);
 	}
-	for(int i=0; i<n-1; i++){
-		for(int j=0;j<n-i-1;j++){
-			if(arr[j]>arr[j+1]){
-				int temp = arr[j];
-				arr[j] = arr[j+1];
-				arr[j+1] = temp;
+	int x;
+	printf("nhap x:");
+	scanf("%d",&x);
+	int temp = x;
+	for(int i=0; i<n; i++){
+		for(int j=0; j<n-i-1;j++){
+			if(arr[j]<x){
+				temp = arr[j];
 			}
 		}
-	}
-	int x;
-	printf(" nhap x=");
-	scanf("%d",&x);
-	for(int i=temp;i>0;i--){
-		if(arr[i]<x){
-			printf(" so nho hon va gan x nhat la : %d ",arr[i]);
-			break;
+		if(arr[i]>temp && arr[i]<x){
+			temp = arr[i];
 		}
+	}
+	if (temp == x){
+		printf("khong co so nho hon x");
+	}else{
+		printf("so gan x nhat : %d",temp);
 	}
 }
 
