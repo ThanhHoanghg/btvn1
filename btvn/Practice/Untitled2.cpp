@@ -20,17 +20,16 @@ int main(void){
 	int n; 
 	printf("nhap n:");
 	scanf("%d",&n);
-	int ary[n];
 	
 	if(n>1){
 		int ary[n];
 		for(int i=0;i<n;i++){
 			printf("ary[n]=",i);
-			scanf("%d",ary[i]);	
+			scanf("%d",&ary[i]);	
 		}
 		int x =sizeof(ary)/sizeof(ary[0]);
-		reverse(ary,x);
-		print(ary,x);
+		reverse(ary, x);
+		print(ary, x);
 	}else{
 		printf("n khong hop le");
 	}
