@@ -23,7 +23,7 @@ int main(void){
 	int ary[n];
 	for(int i=0;i<n;i++){
 		printf("ary[n]=",i);
-		scanf("%d",ary[i]);	
+		scanf("%d",&ary[i]);	
 	}
 	if(n>1){
 		int ary[n];
